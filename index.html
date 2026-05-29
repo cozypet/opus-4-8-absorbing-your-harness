@@ -32,19 +32,7 @@
 
 <p>Here is the table that led every writeup today. Read the middle columns and Opus 4.8 is a tidy model upgrade. Read the last column and it is something else: a map of which harness layers Anthropic just reached into.</p>
 
-<table>
-<thead>
-<tr><th>Benchmark</th><th>Opus 4.7</th><th>Opus 4.8</th><th>What the gain signals</th></tr>
-</thead>
-<tbody>
-<tr><td>Agentic coding</td><td>64.3%</td><td>69.2%</td><td>Execution and Verification (L3, L4)</td></tr>
-<tr><td>Multidisciplinary reasoning, with tools</td><td>54.7%</td><td>57.9%</td><td>General capability</td></tr>
-<tr><td>Long-context retrieval at 1M tokens *</td><td>40.3%</td><td>68.1%</td><td>Enables your Context layer (L2)</td></tr>
-<tr><td>Own code flaws left unflagged</td><td>baseline</td><td>~4x fewer</td><td>Verification moving into the weights (L4)</td></tr>
-</tbody>
-</table>
-
-<p><em>Anthropic-reported, except the starred row, a third-party measurement to treat as vendor-adjacent until reproduced.</em></p>
+<figure><img src="https://cozypet.github.io/opus-4-8-absorbing-your-harness/images/diagram-00.png" alt="Benchmark scoreboard: Opus 4.7 vs 4.8 on agentic coding, reasoning, long-context retrieval, and self-flagged code flaws, each mapped to the harness layer it signals."><figcaption><em>The scoreboard everyone read.</em></figcaption></figure>
 
 <p>Every gain that matters points at a layer you used to own. The coding jump is your execution and checking work. The honesty gain is your critic. The wider context window is the room your retrieval fills. That last column is the whole article. The rest of this piece walks it, layer by layer.</p>
 
